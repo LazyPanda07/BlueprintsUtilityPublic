@@ -1,1083 +1,2417 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Utility Documentation</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Utility Documentation</title>
 	<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Mebebonk/BlueprintsAlgorithmsPublic/991cddd9f6d0af0fb0ff31ab574c5b909ebf0564/icon.png" />
-    <link href="../styles.css" rel="stylesheet" type="text/css" />
+	<link href="../styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-    <h1 class="title">
-        Utility Documentation
-    </h1>
-
-    <h2 id="navigation" class="group" style="margin-bottom: auto;">
-        <a href="#navigation"></a>
-        Navigation
-    </h2>
-
-    <table style="margin-left: var(--default-margin-left);">
-        <tr>
-            <td>
-                <a href="#for-each">ForEach</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#for-each-if">ForEachIf</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#remove-if">RemoveIf</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#mapping">Mapping</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#replace">Replace</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#replace-if">ReplaceIf</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#accumulate">Accumulate</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#count">Count</a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <a href="#count-if">Count if</a>
-            </td>
-        </tr>
-    </table>
-
-    <h2 id="for-each" class="group">
-        <a href="#for-each"></a>
-        ForEach
-    </h2>
-
-    <div class="function-link">
-        <a href="ForEachBoolean.html">For Each Boolean</a>
-
-        <br><br>
-
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
-
-    <div class="function-link">
-        <a href="ForEachInteger.html">For Each Integer</a>
-
-        <br><br>
-
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
-
-    <div class="function-link">
-        <a href="ForEachInteger64.html">For Each Integer64</a>
-
-        <br><br>
-
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
-
-    <div class="function-link">
-        <a href="ForEachFloat.html">For Each Float</a>
-
-        <br><br>
-
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
+	<h1 class="title">
+		Utility Documentation
+	</h1>
+
+	<h2 id="navigation" class="group" style="margin-bottom: auto;">
+		<a href="#navigation"></a>
+		Navigation
+	</h2>
+
+	<table style="margin-left: var(--default-margin-left);">
+		<tr>
+			<td>
+				<a href="#for-each">ForEach</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#for-each-if">ForEachIf</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#remove-if">RemoveIf</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#mapping">Mapping</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#replace">Replace</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#replace-if">ReplaceIf</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#accumulate">Accumulate</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#count">Count</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#count-if">Count if</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#copy">Copy</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#copy-if">Copy if</a>
+			</td>
+		</tr>
+	</table>
+
+	<h2 id="for-each" class="group">
+		<a href="#for-each"></a>
+		ForEach
+	</h2>
+
+	<div class="function-link">
+		<a href="ForEachBoolean.html">For Each Boolean</a>
+
+		<br><br>
+
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="ForEachInteger.html">For Each Integer</a>
+
+		<br><br>
+
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="ForEachInteger64.html">For Each Integer64</a>
+
+		<br><br>
+
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachString.html">For Each String</a>
+	<div class="function-link">
+		<a href="ForEachFloat.html">For Each Float</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachName.html">For Each Name</a>
+	<div class="function-link">
+		<a href="ForEachString.html">For Each String</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachText.html">For Each Text</a>
+	<div class="function-link">
+		<a href="ForEachName.html">For Each Name</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachObject.html">For Each Object</a>
+	<div class="function-link">
+		<a href="ForEachText.html">For Each Text</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-    <h2 id="for-each-if" class="group">
-        <a href="#for-each-if"></a>
-        ForEachIf
-    </h2>
+	<div class="function-link">
+		<a href="ForEachObject.html">For Each Object</a>
 
-    <div class="function-link">
-        <a href="ForEachIfBoolean.html">For Each If Boolean</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Invokes a callable to each element in array
+		</span>
+	</div>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+	<h2 id="for-each-if" class="group">
+		<a href="#for-each-if"></a>
+		ForEachIf
+	</h2>
 
-    <div class="function-link">
-        <a href="ForEachIfInteger.html">For Each If Integer</a>
+	<div class="function-link">
+		<a href="ForEachIfBoolean.html">For Each If Boolean</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfInteger64.html">For Each If Integer64</a>
+	<div class="function-link">
+		<a href="ForEachIfInteger.html">For Each If Integer</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfFloat.html">For Each If Float</a>
+	<div class="function-link">
+		<a href="ForEachIfInteger64.html">For Each If Integer64</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfString.html">For Each If String</a>
+	<div class="function-link">
+		<a href="ForEachIfFloat.html">For Each If Float</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfName.html">For Each If Name</a>
+	<div class="function-link">
+		<a href="ForEachIfString.html">For Each If String</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfText.html">For Each If Text</a>
+	<div class="function-link">
+		<a href="ForEachIfName.html">For Each If Name</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ForEachIfObject.html">For Each If Object</a>
+	<div class="function-link">
+		<a href="ForEachIfText.html">For Each If Text</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Invokes a callable to each element in array that returns true in predicate
-        </span>
-    </div>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-    <h2 id="remove-if" class="group">
-        <a href="#remove-if"></a>
-        RemoveIf
-    </h2>
+	<div class="function-link">
+		<a href="ForEachIfObject.html">For Each If Object</a>
 
-    <div class="function-link">
-        <a href="RemoveIfBoolean.html">Remove If Boolean</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Invokes a callable to each element in array that returns true in predicate
+		</span>
+	</div>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+	<h2 id="remove-if" class="group">
+		<a href="#remove-if"></a>
+		RemoveIf
+	</h2>
 
-    <div class="function-link">
-        <a href="RemoveIfInteger.html">Remove If Integer</a>
+	<div class="function-link">
+		<a href="RemoveIfBoolean.html">Remove If Boolean</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfInteger64.html">Remove If Integer64</a>
+	<div class="function-link">
+		<a href="RemoveIfInteger.html">Remove If Integer</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfFloat.html">Remove If Float</a>
+	<div class="function-link">
+		<a href="RemoveIfInteger64.html">Remove If Integer64</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfString.html">Remove If String</a>
+	<div class="function-link">
+		<a href="RemoveIfFloat.html">Remove If Float</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfName.html">Remove If Name</a>
+	<div class="function-link">
+		<a href="RemoveIfString.html">Remove If String</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfText.html">Remove If Text</a>
+	<div class="function-link">
+		<a href="RemoveIfName.html">Remove If Name</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="RemoveIfObject.html">Remove If Object</a>
+	<div class="function-link">
+		<a href="RemoveIfText.html">Remove If Text</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Remove element if predicate returns true
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerBoolean.html">Integer-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="RemoveIfObject.html">Remove If Object</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-boolean map
-        </span>
-    </div>
+		<span>
+			Remove element if predicate returns true
+		</span>
+	</div>
 
-    <h2 id="mapping" class="group">
-        <a href="#mapping"></a>
-        Mapping
-    </h2>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerBoolean.html">Integer-Boolean Mapping</a>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerBoolean.html">Integer-Boolean Mapping</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Iterate integer-boolean map
+		</span>
+	</div>
 
-        <span>
-            Iterate integer-boolean map
-        </span>
-    </div>
+	<h2 id="mapping" class="group">
+		<a href="#mapping"></a>
+		Mapping
+	</h2>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerInteger.html">Integer-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerBoolean.html">Integer-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-integer map
-        </span>
-    </div>
+		<span>
+			Iterate integer-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerInteger64.html">Integer-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerInteger.html">Integer-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate integer-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerFloat.html">Integer-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerInteger64.html">Integer-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-float map
-        </span>
-    </div>
+		<span>
+			Iterate integer-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerString.html">Integer-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerFloat.html">Integer-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-string map
-        </span>
-    </div>
+		<span>
+			Iterate integer-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerName.html">Integer-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerString.html">Integer-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-name map
-        </span>
-    </div>
+		<span>
+			Iterate integer-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerText.html">Integer-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerName.html">Integer-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-text map
-        </span>
-    </div>
+		<span>
+			Iterate integer-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapIntegerObject.html">Integer-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerText.html">Integer-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer-object map
-        </span>
-    </div>
+		<span>
+			Iterate integer-text map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Boolean.html">Integer64-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapIntegerObject.html">Integer-Object Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-boolean map
-        </span>
-    </div>
+		<span>
+			Iterate integer-object map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Integer.html">Integer64-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Boolean.html">Integer64-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-integer map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Integer64.html">Integer64-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Integer.html">Integer64-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Float.html">Integer64-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Integer64.html">Integer64-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-float map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64String.html">Integer64-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Float.html">Integer64-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-string map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Name.html">Integer64-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64String.html">Integer64-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-name map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Text.html">Integer64-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Name.html">Integer64-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-text map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapInteger64Object.html">Integer64-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Text.html">Integer64-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate integer64-object map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-text map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatBoolean.html">Float-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapInteger64Object.html">Integer64-Object Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-boolean map
-        </span>
-    </div>
+		<span>
+			Iterate integer64-object map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatInteger.html">Float-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatBoolean.html">Float-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-integer map
-        </span>
-    </div>
+		<span>
+			Iterate float-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatInteger64.html">Float-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatInteger.html">Float-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate float-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatFloat.html">Float-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatInteger64.html">Float-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-float map
-        </span>
-    </div>
+		<span>
+			Iterate float-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatString.html">Float-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatFloat.html">Float-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-string map
-        </span>
-    </div>
+		<span>
+			Iterate float-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatName.html">Float-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatString.html">Float-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-name map
-        </span>
-    </div>
+		<span>
+			Iterate float-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatText.html">Float-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatName.html">Float-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-text map
-        </span>
-    </div>
+		<span>
+			Iterate float-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapFloatObject.html">Float-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatText.html">Float-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate float-object map
-        </span>
-    </div>
+		<span>
+			Iterate float-text map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringBoolean.html">String-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapFloatObject.html">Float-Object Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-boolean map
-        </span>
-    </div>
+		<span>
+			Iterate float-object map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringInteger.html">String-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringBoolean.html">String-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-integer map
-        </span>
-    </div>
+		<span>
+			Iterate string-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringInteger64.html">String-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringInteger.html">String-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate string-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringFloat.html">String-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringInteger64.html">String-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-float map
-        </span>
-    </div>
+		<span>
+			Iterate string-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringString.html">String-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringFloat.html">String-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-string map
-        </span>
-    </div>
+		<span>
+			Iterate string-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringName.html">String-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringString.html">String-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-name map
-        </span>
-    </div>
+		<span>
+			Iterate string-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringText.html">String-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringName.html">String-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-text map
-        </span>
-    </div>
+		<span>
+			Iterate string-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapStringObject.html">String-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringText.html">String-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate string-object map
-        </span>
-    </div>
+		<span>
+			Iterate string-text map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameBoolean.html">Name-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapStringObject.html">String-Object Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-boolean map
-        </span>
-    </div>
+		<span>
+			Iterate string-object map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameInteger.html">Name-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameBoolean.html">Name-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-integer map
-        </span>
-    </div>
+		<span>
+			Iterate name-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameInteger64.html">Name-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameInteger.html">Name-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate name-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameFloat.html">Name-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameInteger64.html">Name-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-float map
-        </span>
-    </div>
+		<span>
+			Iterate name-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameString.html">Name-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameFloat.html">Name-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-string map
-        </span>
-    </div>
+		<span>
+			Iterate name-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameName.html">Name-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameString.html">Name-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-name map
-        </span>
-    </div>
+		<span>
+			Iterate name-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameText.html">Name-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameName.html">Name-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-text map
-        </span>
-    </div>
+		<span>
+			Iterate name-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapNameObject.html">Name-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameText.html">Name-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate name-object map
-        </span>
-    </div>
+		<span>
+			Iterate name-text map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectBoolean.html">Object-Boolean Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapNameObject.html">Name-Object Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-boolean map
-        </span>
-    </div>
+		<span>
+			Iterate name-object map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectInteger.html">Object-Integer Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectBoolean.html">Object-Boolean Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-integer map
-        </span>
-    </div>
+		<span>
+			Iterate object-boolean map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectInteger64.html">Object-Integer64 Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectInteger.html">Object-Integer Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-integer64 map
-        </span>
-    </div>
+		<span>
+			Iterate object-integer map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectFloat.html">Object-Float Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectInteger64.html">Object-Integer64 Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-float map
-        </span>
-    </div>
+		<span>
+			Iterate object-integer64 map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectString.html">Object-String Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectFloat.html">Object-Float Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-string map
-        </span>
-    </div>
+		<span>
+			Iterate object-float map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectName.html">Object-Name Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectString.html">Object-String Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-name map
-        </span>
-    </div>
+		<span>
+			Iterate object-string map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectText.html">Object-Text Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectName.html">Object-Name Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-text map
-        </span>
-    </div>
+		<span>
+			Iterate object-name map
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="Mapping/MapObjectObject.html">Object-Object Mapping</a>
+	<div class="function-link">
+		<a href="Mapping/MapObjectText.html">Object-Text Mapping</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Iterate object-object map
-        </span>
-    </div>
+		<span>
+			Iterate object-text map
+		</span>
+	</div>
 
-    <h2 id="replace" class="group">
-        <a href="#replace"></a>
-        Replace
-    </h2>
+	<div class="function-link">
+		<a href="Mapping/MapObjectObject.html">Object-Object Mapping</a>
 
-    <div class="function-link">
-        <a href="ReplaceInteger.html">Replace Integer</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Iterate object-object map
+		</span>
+	</div>
 
-        <span>
-            Replace one integer to another
-        </span>
-    </div>
+	<h2 id="replace" class="group">
+		<a href="#replace"></a>
+		Replace
+	</h2>
 
-    <div class="function-link">
-        <a href="ReplaceInteger64.html">Replace Integer64</a>
+	<div class="function-link">
+		<a href="ReplaceInteger.html">Replace Integer</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one integer64 to another
-        </span>
-    </div>
+		<span>
+			Replace one integer to another
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceFloat.html">Replace Float</a>
+	<div class="function-link">
+		<a href="ReplaceInteger64.html">Replace Integer64</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one float to another
-        </span>
-    </div>
+		<span>
+			Replace one integer64 to another
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceString.html">Replace String</a>
+	<div class="function-link">
+		<a href="ReplaceFloat.html">Replace Float</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one string to another
-        </span>
-    </div>
+		<span>
+			Replace one float to another
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceName.html">Replace Name</a>
+	<div class="function-link">
+		<a href="ReplaceString.html">Replace String</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one name to another
-        </span>
-    </div>
+		<span>
+			Replace one string to another
+		</span>
+	</div>
 
-    <h2 id="replace-if" class="group">
-        <a href="#replace-if"></a>
-        ReplaceIf
-    </h2>
+	<div class="function-link">
+		<a href="ReplaceName.html">Replace Name</a>
 
-    <div class="function-link">
-        <a href="ReplaceIfInteger.html">Replace If Integer</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Replace one name to another
+		</span>
+	</div>
 
-        <span>
-            Replace one integer to another with predicate
-        </span>
-    </div>
+	<h2 id="replace-if" class="group">
+		<a href="#replace-if"></a>
+		ReplaceIf
+	</h2>
 
-    <div class="function-link">
-        <a href="ReplaceIfInteger64.html">Replace If Integer64</a>
+	<div class="function-link">
+		<a href="ReplaceIfInteger.html">Replace If Integer</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one integer64 to another with predicate
-        </span>
-    </div>
+		<span>
+			Replace one integer to another with predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceIfFloat.html">Replace If Float</a>
+	<div class="function-link">
+		<a href="ReplaceIfInteger64.html">Replace If Integer64</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one float to another with predicate
-        </span>
-    </div>
+		<span>
+			Replace one integer64 to another with predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceIfString.html">Replace If String</a>
+	<div class="function-link">
+		<a href="ReplaceIfFloat.html">Replace If Float</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one string to another with predicate
-        </span>
-    </div>
+		<span>
+			Replace one float to another with predicate
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="ReplaceIfName.html">Replace If Name</a>
+	<div class="function-link">
+		<a href="ReplaceIfString.html">Replace If String</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Replace one name to another with predicate
-        </span>
-    </div>
+		<span>
+			Replace one string to another with predicate
+		</span>
+	</div>
 
-    <h2 id="accumulate" class="group">
-        <a href="#accumulate"></a>
-        Accumulate
-    </h2>
+	<div class="function-link">
+		<a href="ReplaceIfName.html">Replace If Name</a>
 
-    <div class="function-link">
-        <a href="AccumulateIntegerIntegerArray.html">Accumulate Integer With Integer Array</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Replace one name to another with predicate
+		</span>
+	</div>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+	<h2 id="accumulate" class="group">
+		<a href="#accumulate"></a>
+		Accumulate
+	</h2>
 
-    <div class="function-link">
-        <a href="AccumulateIntegerInteger64Array.html">Accumulate Integer With Integer64 Array</a>
+	<div class="function-link">
+		<a href="AccumulateIntegerIntegerArray.html">Accumulate Integer With Integer Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateIntegerFloatArray.html">Accumulate Integer With Float Array</a>
+	<div class="function-link">
+		<a href="AccumulateIntegerInteger64Array.html">Accumulate Integer With Integer64 Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateInteger64IntegerArray.html">Accumulate Integer64 With Integer Array</a>
+	<div class="function-link">
+		<a href="AccumulateIntegerFloatArray.html">Accumulate Integer With Float Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateInteger64Integer64Array.html">Accumulate Integer64 With Integer64 Array</a>
+	<div class="function-link">
+		<a href="AccumulateInteger64IntegerArray.html">Accumulate Integer64 With Integer Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateInteger64FloatArray.html">Accumulate Integer64 With Float Array</a>
+	<div class="function-link">
+		<a href="AccumulateInteger64Integer64Array.html">Accumulate Integer64 With Integer64 Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateFloatIntegerArray.html">Accumulate Float With Integer Array</a>
+	<div class="function-link">
+		<a href="AccumulateInteger64FloatArray.html">Accumulate Integer64 With Float Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateFloatInteger64Array.html">Accumulate Float With Integer64 Array</a>
+	<div class="function-link">
+		<a href="AccumulateFloatIntegerArray.html">Accumulate Float With Integer Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="AccumulateFloatFloatArray.html">Accumulate Float With Float Array</a>
+	<div class="function-link">
+		<a href="AccumulateFloatInteger64Array.html">Accumulate Float With Integer64 Array</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Accumulate elements
-        </span>
-    </div>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-    <h2 id="count" class="group">
-        <a href="#count"></a>
-        Count
-    </h2>
+	<div class="function-link">
+		<a href="AccumulateFloatFloatArray.html">Accumulate Float With Float Array</a>
 
-    <div class="function-link">
-        <a href="CountIntegers.html">Count Integers</a>
+		<br><br>
 
-        <br><br>
+		<span>
+			Accumulate elements
+		</span>
+	</div>
 
-        <span>
-            Count entries of given integer
-        </span>
-    </div>
+	<h2 id="count" class="group">
+		<a href="#count"></a>
+		Count
+	</h2>
 
-    <div class="function-link">
-        <a href="CountIntegers64.html">Count Integers64</a>
+	<div class="function-link">
+		<a href="CountIntegers.html">Count Integers</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Count entries of given integer64
-        </span>
-    </div>
+		<span>
+			Count entries of given integer
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="CountFloats.html">Count Floats</a>
+	<div class="function-link">
+		<a href="CountIntegers64.html">Count Integers64</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Count entries of given float
-        </span>
-    </div>
+		<span>
+			Count entries of given integer64
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="CountStrings.html">Count Strings</a>
+	<div class="function-link">
+		<a href="CountFloats.html">Count Floats</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Count entries of given string
-        </span>
-    </div>
+		<span>
+			Count entries of given float
+		</span>
+	</div>
 
-    <div class="function-link">
-        <a href="CountNames.html">Count Names</a>
+	<div class="function-link">
+		<a href="CountStrings.html">Count Strings</a>
 
-        <br><br>
+		<br><br>
 
-        <span>
-            Count entries of given name
-        </span>
-    </div>
+		<span>
+			Count entries of given string
+		</span>
+	</div>
 
+	<div class="function-link">
+		<a href="CountNames.html">Count Names</a>
+
+		<br><br>
+
+		<span>
+			Count entries of given name
+		</span>
+	</div>
+
+	<h2 id="count-if" class="group">
+		<a href="#count-if"></a>
+		CountIf
+	</h2>
+
+	<div class="function-link">
+		<a href="CountIfIntegers.html">Count If Integers</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfIntegers64.html">Count If Integers64</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfFloats.html">Count If Floats</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfStrings.html">Count If Strings</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfNames.html">Count If Names</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfTexts.html">Count If Texts</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CountIfObjects.html">Count If Objects</a>
+
+		<br><br>
+
+		<span>
+			Count values that returns true in predicate
+		</span>
+	</div>
+
+	<h2 id="copy" class="group">
+		<a href="#copy"></a>
+		Copy
+	</h2>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64Array.html">Copy Integer64 Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of integers64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyBooleanArray.html">Copy Boolean Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of booleans
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatArray.html">Copy Float Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of floats
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerArray.html">Copy Integer Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of integers
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringArray.html">Copy String Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of strings
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyTextArray.html">Copy Text Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of texts
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameArray.html">Copy Name Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of names
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectArray.html">Copy Object Array</a>
+
+		<br><br>
+
+		<span>
+			Copy Array of objects
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64Set.html">Copy Integer64 Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of integers64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatSet.html">Copy Float Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of floats
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerSet.html">Copy Integer Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of integers
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringSet.html">Copy String Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of strings
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameSet.html">Copy Name Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of names
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectSet.html">Copy Object Set</a>
+
+		<br><br>
+
+		<span>
+			Copy Set of objects
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64Integer64Map.html">Copy Map Integer64-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64BooleanMap.html">Copy Map Integer64-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64FloatMap.html">Copy Map Integer64-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64IntegerMap.html">Copy Map Integer64-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64StringMap.html">Copy Map Integer64-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64TextMap.html">Copy Map Integer64-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64NameMap.html">Copy Map Integer64-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyInteger64ObjectMap.html">Copy Map Integer64-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer64-Object
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatInteger64Map.html">Copy Map Float-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatBooleanMap.html">Copy Map Float-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatFloatMap.html">Copy Map Float-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatIntegerMap.html">Copy Map Float-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatStringMap.html">Copy Map Float-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatTextMap.html">Copy Map Float-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatNameMap.html">Copy Map Float-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyFloatObjectMap.html">Copy Map Float-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Float-Object
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerInteger64Map.html">Copy Map Integer-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerBooleanMap.html">Copy Map Integer-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerFloatMap.html">Copy Map Integer-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerIntegerMap.html">Copy Map Integer-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerStringMap.html">Copy Map Integer-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerTextMap.html">Copy Map Integer-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerNameMap.html">Copy Map Integer-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyIntegerObjectMap.html">Copy Map Integer-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Integer-Object
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringInteger64Map.html">Copy Map String-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringBooleanMap.html">Copy Map String-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringFloatMap.html">Copy Map String-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringIntegerMap.html">Copy Map String-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringStringMap.html">Copy Map String-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringTextMap.html">Copy Map String-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringNameMap.html">Copy Map String-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyStringObjectMap.html">Copy Map String-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of String-Object
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameInteger64Map.html">Copy Map Name-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameBooleanMap.html">Copy Map Name-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameFloatMap.html">Copy Map Name-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameIntegerMap.html">Copy Map Name-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameStringMap.html">Copy Map Name-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameTextMap.html">Copy Map Name-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameNameMap.html">Copy Map Name-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyNameObjectMap.html">Copy Map Name-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Name-Object
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectInteger64Map.html">Copy Map Object-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Integer64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectBooleanMap.html">Copy Map Object-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Boolean
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectFloatMap.html">Copy Map Object-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Float
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectIntegerMap.html">Copy Map Object-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Integer
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectStringMap.html">Copy Map Object-String</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-String
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectTextMap.html">Copy Map Object-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Text
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectNameMap.html">Copy Map Object-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Name
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="Copy/CopyObjectObjectMap.html">Copy Map Object-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy Map of Object-Object
+		</span>
+	</div>
+
+	<h2 id="copy-if" class="group">
+		<a href="#copy-if"></a>
+		CopyIf
+	</h2>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64Array.html">Copy If Integer64 Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of integers64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfBooleanArray.html">Copy If Boolean Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of booleans
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatArray.html">Copy If Float Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of floats
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerArray.html">Copy If Integer Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of integers
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringArray.html">Copy If String Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of strings
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfTextArray.html">Copy If Text Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of texts
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameArray.html">Copy If Name Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of names
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectArray.html">Copy If Object Array</a>
+
+		<br><br>
+
+		<span>
+			Copy if Array of objects
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64Set.html">Copy If Integer64 Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of integers64
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatSet.html">Copy If Float Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of floats
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerSet.html">Copy If Integer Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of integers
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringSet.html">Copy If String Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of strings
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameSet.html">Copy If Name Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of names
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectSet.html">Copy If Object Set</a>
+
+		<br><br>
+
+		<span>
+			Copy if Set of objects
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64Integer64Map.html">Copy If Map Integer64-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64BooleanMap.html">Copy If Map Integer64-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64FloatMap.html">Copy If Map Integer64-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64IntegerMap.html">Copy If Map Integer64-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64StringMap.html">Copy If Map Integer64-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64TextMap.html">Copy If Map Integer64-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64NameMap.html">Copy If Map Integer64-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfInteger64ObjectMap.html">Copy If Map Integer64-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer64-Object which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatInteger64Map.html">Copy If Map Float-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatBooleanMap.html">Copy If Map Float-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatFloatMap.html">Copy If Map Float-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatIntegerMap.html">Copy If Map Float-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatStringMap.html">Copy If Map Float-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatTextMap.html">Copy If Map Float-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatNameMap.html">Copy If Map Float-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfFloatObjectMap.html">Copy If Map Float-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Float-Object which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerInteger64Map.html">Copy If Map Integer-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerBooleanMap.html">Copy If Map Integer-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerFloatMap.html">Copy If Map Integer-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerIntegerMap.html">Copy If Map Integer-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerStringMap.html">Copy If Map Integer-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerTextMap.html">Copy If Map Integer-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerNameMap.html">Copy If Map Integer-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfIntegerObjectMap.html">Copy If Map Integer-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Integer-Object which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringInteger64Map.html">Copy If Map String-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringBooleanMap.html">Copy If Map String-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringFloatMap.html">Copy If Map String-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringIntegerMap.html">Copy If Map String-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringStringMap.html">Copy If Map String-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringTextMap.html">Copy If Map String-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringNameMap.html">Copy If Map String-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfStringObjectMap.html">Copy If Map String-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of String-Object which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameInteger64Map.html">Copy If Map Name-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameBooleanMap.html">Copy If Map Name-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameFloatMap.html">Copy If Map Name-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameIntegerMap.html">Copy If Map Name-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameStringMap.html">Copy If Map Name-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameTextMap.html">Copy If Map Name-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameNameMap.html">Copy If Map Name-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfNameObjectMap.html">Copy If Map Name-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Name-Object which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectInteger64Map.html">Copy If Map Object-Integer64</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Integer64 which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectBooleanMap.html">Copy If Map Object-Boolean</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Boolean which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectFloatMap.html">Copy If Map Object-Float</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Float which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectIntegerMap.html">Copy If Map Object-Integer</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Integer which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectStringMap.html">Copy If Map Object-String</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-String which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectTextMap.html">Copy If Map Object-Text</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Text which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectNameMap.html">Copy If Map Object-Name</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Name which returns true in predicate
+		</span>
+	</div>
+
+	<div class="function-link">
+		<a href="CopyIf/CopyIfObjectObjectMap.html">Copy If Map Object-Object</a>
+
+		<br><br>
+
+		<span>
+			Copy all pairs of Object-Object which returns true in predicate
+		</span>
+	</div>
 </body>
 
 </html>
